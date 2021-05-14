@@ -1,0 +1,7 @@
+
+
+export void fft_twiddle(uniform double *E, uniform double *O,
+                        uniform double *A, uniform int N) 
+{
+  
+}
