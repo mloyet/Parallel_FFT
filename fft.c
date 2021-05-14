@@ -147,11 +147,11 @@ void fft_simd_out(double *A_r, double *A_c, double *O_r, double *O_c, int N, boo
   if (cached) {
 #pragma omp parallel
 #pragma omp single
-    fft_simd_out_body_par_cache(0, A_r, A_c, O_r, O_c, 1, N, 2);
+    fft_simd_out_body_par_cache(0, A_r, A_c, O_r, O_c, 1, N, 8);
   } else {
 #pragma omp parallel
 #pragma omp single
-    fft_simd_out_body_par(A_r, A_c, O_r, O_c, 1, N, 2);
+    fft_simd_out_body_par(A_r, A_c, O_r, O_c, 1, N, 8);
   }
 }
 

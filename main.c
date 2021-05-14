@@ -119,7 +119,7 @@ int main(int argc, char **argv) {
 
   struct timespec before, after;
 
-  omp_set_num_threads(2);
+  omp_set_num_threads(8);
 
   int c;
   while ((c = getopt(argc, argv, "f:o:wtVp:r:c")) != -1) {
